@@ -1,0 +1,1 @@
+// import slider from '../data/slider.json'

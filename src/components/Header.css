@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    background-color: #075F29;
+    font-size: 18px;
+}
+header img {
+    height: 40px;
+    padding-left: 15px;
+}
+
+header nav{
+    padding-right: 15px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    align-items: center;
+    padding-right: 10px;
+    
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 640px) {
+    header img {
+        height: 30px;
+    }
+}
+@media (max-width: 610px) {
+    header img {
+        height: 20px;
+    }
+
+}
