@@ -1,0 +1,55 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #075F29;
+  
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.btn-prev,
+.btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-prev,
+.btn-next {
+    padding: 5px 10px 5px 10px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.btn-next {
+    right: 50px;
+}
+.btn-prev{
+    left: 50px;
+}
+.btn-prev:hover,
+.btn-next:hover{
+    scale: 1.1;
+    
+}
+
+
+@media (max-width: 550px){
+    .btn-prev,
+    .btn-next {
+        font-size: 16px;
+        padding: 2px 5px 2px 5px;
+        font-weight: bold;
+    }
+
+}

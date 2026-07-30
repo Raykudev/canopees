@@ -2,9 +2,11 @@ footer {
     background-color: #075F29;
     color: white;
     font-size: 18px;
+    padding-top: 10px;
 }
 footer img {
     height: 40px;
+    
 }
 footer ul {
     list-style: none;
@@ -32,8 +34,7 @@ footer li {
 }
 footer a  {
     text-decoration: none;
-    color: white;
-    
+    color: white;   
 }
 footer p {
     text-align: center;
@@ -59,6 +60,7 @@ footer p {
     padding: 15px 0;
     font-weight: 600;
 }
+
 
 
 

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import slides from '../data/slider.json'
+import './Slider.css'
 
 function Slider(){
 
@@ -19,9 +20,9 @@ function Slider(){
 
   return (
     <div className="slider">
-        <button onClick={prevImage}>←</button>
+        <button className='btn-prev' onClick={prevImage}>⬅</button>
       <img src={actuelSlide.image} alt={actuelSlide.alt} />
-      <button onClick={nextImage}>→</button>
+      <button className='btn-next' onClick={nextImage}>⮕</button>
     </div>
   )
 }
