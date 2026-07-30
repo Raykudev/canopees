@@ -1,0 +1,53 @@
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #f1f1f1;
+    color: #5E5E5E;
+    
+}
+.presentation img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ACC421;
+    margin-left: 250px
+}
+.text{
+    width: 650px;
+    padding: 10px;
+    margin-right: 100px;
+    font-size: 18px;
+    
+}
+.text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px;
+}
+.text h2{
+    color: #ACC421;
+    padding: 5px;
+}
+.services{
+    padding: 10px;
+    font-size: 20px;
+}
+.services span{
+    color: #ACC421;
+}
+
+li{
+    padding-bottom: 10px;
+}
+ul {
+    padding-left: 20px
+}
+.text button {
+    display: block;
+    margin-top: 15px;
+    width: 12rem;
+    cursor: pointer;
+}

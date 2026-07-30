@@ -12,10 +12,10 @@ header {
     align-items: center;
     padding: 10px 0 10px 0;
     background-color: #075F29;
-    font-size: 18px;
+    font-size: 20px;
 }
 header img {
-    height: 40px;
+    height: 50px;
     padding-left: 15px;
 }
 
@@ -29,6 +29,7 @@ header ul{
     gap: 12px;
     align-items: center;
     padding-right: 10px;
+    padding-top: 10px
     
 }
 header a {
