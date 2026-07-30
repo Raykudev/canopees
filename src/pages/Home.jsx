@@ -1,4 +1,3 @@
-// import Boutton from "../components/Boutton"
 import Slider from '../components/Slider'
 
 
