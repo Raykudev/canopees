@@ -1,6 +1,9 @@
 [
-    { "id" : 1,"nom" : "", "image":"jardin1.jpg", "alt":"" },
-    { "id" : 2,"nom" : "", "image":"jardin2.jpg", "alt":"" },
-    { "id" : 3,"nom" : "", "image":"jardin3.jpg", "alt":"" },
-    { "id" : 4,"nom" : "", "image":"jardin4.jpg", "alt":"" }
+    { "id" : 1,"nom" : "Jardin", "image":"/images/slider/jardin-vert.jpg", "alt":"Grand jardin avec une magnifique pelouse verte." },
+    
+    { "id" : 2,"nom" : "Palmier", "image":"/images/slider/plantation-palmier.jpg", "alt":"Jolie coin de plantation de palmier et yuka." },
+
+    { "id" : 3,"nom" : "elagage-arbre", "image":"/images/slider/elagage-arbre.jpg", "alt":"Personne qui elague un arbre." },
+
+    { "id" : 4,"nom" : "elagage-palmier", "image":"/images/slider/elagage-palmier", "alt":"Personne qui elague un palmier." }
 ]
