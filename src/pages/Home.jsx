@@ -1,7 +1,6 @@
 import Slider from '../components/Slider'
 import './Home.css'
 import Boutton from '../components/Boutton'
-import { Link } from 'react-router-dom'
 
 
 

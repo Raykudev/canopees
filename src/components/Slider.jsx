@@ -40,9 +40,9 @@ function Slider() {
 
   return (
     <div className="slider">
-      <button className="btn-prev" onClick={handlePrevClick}>←</button>
+      <button className="btn-prev" onClick={handlePrevClick}>⬅</button>
       <img src={actuelSlide.image} alt={actuelSlide.alt} />
-      <button className="btn-next" onClick={handleNextClick}>→</button>
+      <button className="btn-next" onClick={handleNextClick}>➡</button>
     </div>
   )
 }

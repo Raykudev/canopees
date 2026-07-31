@@ -22,14 +22,15 @@
 }
 .btn-prev,
 .btn-next {
-    padding: 5px 10px 5px 10px;
-    border-radius: 50px;
+    padding: 10px;
+    border-radius: 50%;
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: 600;
     border: 2px solid white;
     background-color: transparent;
     color: white;
     cursor: pointer;
+    
 }
 .btn-next {
     right: 50px;
