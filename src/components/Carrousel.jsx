@@ -20,19 +20,17 @@ function Carrousel() {
 
   return (
     <div className="carrousel">
-      <h2>Nos réalisations</h2>
-      <div className="carrousel-contenu">
-        <button className="btn-carrouselprev" onClick={prevRealisation}>←</button>
-
-        <div className="carrousel-photos">
-          <img src={photo1.image} alt={photo1.alt} />
-          <img src={photo2.image} alt={photo2.alt} />
-          <img src={photo3.image} alt={photo3.alt} />
-        </div>
-
-        <button className="btn-carrouselnext" onClick={nextRealisation}>→</button>
-      </div>
+  <h2>Nos réalisations</h2>
+  <div className="carrousel-contenu">
+    <div className="carrousel-photos">
+      <button className="btn-carrouselprev" onClick={prevRealisation}>←</button>
+      <img src={photo1.image} alt={photo1.alt} />
+      <img src={photo2.image} alt={photo2.alt} />
+      <img src={photo3.image} alt={photo3.alt} />
+      <button className="btn-carrouselnext" onClick={nextRealisation}>→</button>
     </div>
+  </div>
+</div>
   )
 }
 

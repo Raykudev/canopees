@@ -1,78 +1,88 @@
-.presentation{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px;
-    background-color: #f1f1f1;
-    color: #5E5E5E;
-    
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #f1f1f1;
+  color: #5E5E5E;
 }
-.presentation img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ACC421;
-    margin-left: 250px
+
+.presentation img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ACC421;
+  margin-left: 250px;
 }
-.text{
-    width: 650px;
-    padding: 10px;
-    margin-right: 100px;
-    font-size: 18px;
-    
+
+.text {
+  width: 650px;
+  padding: 10px;
+  margin-right: 100px;
+  font-size: 18px;
 }
+
 .text h3 {
-    font-size: 20px;
-    font-weight: 400;
-    padding: 5px;
-}
-.text h2{
-    color: #ACC421;
-    padding: 5px;
-}
-.services{
-    padding: 10px;
-    font-size: 20px;
-}
-.services span{
-    color: #ACC421;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
 }
 
-li{
-    padding-bottom: 10px;
+.text h2 {
+  color: #ACC421;
+  padding: 5px;
 }
+
+.services {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.services span {
+  color: #ACC421;
+}
+
+li {
+  padding-top: 3px;
+}
+
 ul {
-    padding-left: 20px
+  padding-left: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
+
 .text button {
-    display: block;
-    margin-top: 15px;
-    width: 12rem;
-    cursor: pointer;
-    font-weight: 600;
+  display: block;
+  margin-top: 15px;
+  width: 12rem;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-/* Bloc de carte */
-
+/* Bloc public cible */
 
 .public-cible {
   text-align: center;
   padding: 60px 0;
   background-color: white;
 }
+
 .public-cible h2 {
-    padding: 30px;   
+  padding: 30px;
+  font-size: 30px;
 }
+
 .public-cible p {
-    padding-bottom: 50px;
-    font-size: 18px;
-    text-wrap: wrap;
+  padding-bottom: 50px;
+  font-size: 18px;
 }
 
 .cartes {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -85,7 +95,7 @@ ul {
   overflow: hidden;
 }
 
-.card-1 img:first-child {
+.card-1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -99,9 +109,9 @@ ul {
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   padding: 12px;
-  justify-content: space-between;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -123,36 +133,55 @@ ul {
 
 
 
-
-
-
 /* RESPONSIVE */
 
-@media (max-width: 1200px){
-    .presentation img{
-        margin-left: 150px;
-    }
+@media (max-width: 1200px) {
+  .presentation img {
+    margin-left: 150px;
+  }
 }
-@media (max-width: 900px){
-    .presentation img{
-        margin-left: 0px;
-    }
-}
-@media (max-width: 700px){
-    .presentation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-left: 20px;
-        text-wrap: wrap;
-         }
-         .text button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
 
-    
+@media (max-width: 900px) {
+  .presentation img {
+    margin-left: 0;
+  }
+
+  .carte {
+    width: 45%;
+  }
+
+  .carrousel-photos img {
+    width: 200px;
+    height: 200px;
+  }
 }
+
+@media (max-width: 768px) {
+  .presentation {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .presentation img {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 20px 0;
+  }
+
+  .text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .text ul {
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .text button {
+    margin: 15px auto 0 auto;
+  }
+}
+

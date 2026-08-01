@@ -1,51 +1,100 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0 10px 0;
-    background-color: #075F29;
-    font-size: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #075F29;
+  font-size: 20px;
 }
+
 header img {
-    height: 50px;
-    padding-left: 15px;
+  height: 50px;
+  padding-left: 15px;
 }
 
-header nav{
-    padding-right: 15px;
+header nav {
+  padding-right: 15px;
 }
 
-header ul{
-    display: flex;
-    list-style: none;
-    gap: 12px;
-    align-items: center;
-    padding-right: 10px;
-    padding-top: 10px
-    
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  align-items: center;
+  padding-right: 10px;
 }
+
 header a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
+.burger {
+  display: none;
+}
 
 @media (max-width: 640px) {
-    header img {
-        height: 30px;
-    }
+  header img {
+    height: 30px;
+  }
 }
-@media (max-width: 610px) {
-    header img {
-        height: 20px;
-    }
 
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  .nav-ouvert ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 170px;
+    background-color: #f1f1f1;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 10px 0 0 0;
+    z-index: 10;
+  }
+
+  .nav-ouvert ul li {
+    width: 100%;
+  }
+
+  .nav-ouvert ul li a {
+    display: block;
+    padding: 3px 15px;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 1px solid #C4C4C4;
+  }
+
+  .nav-ouvert ul li a:hover {
+    background-color: #f1f1f1;
+  }
 }
