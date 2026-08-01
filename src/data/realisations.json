@@ -1,0 +1,13 @@
+[
+  { "id": 1, "image": "/images/realisations/realisation-1.jpg", "alt": "Jardin avec une belle pelouse verte devant une maison moderne" },
+
+  { "id": 2, "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
+
+  { "id": 3, "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
+
+  { "id": 4, "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
+
+  { "id": 5, "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
+
+  { "id": 6, "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+]

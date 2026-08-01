@@ -1,6 +1,7 @@
 import Slider from '../components/Slider'
 import './Home.css'
 import Boutton from '../components/Boutton'
+import Carrousel from '../components/Carrousel'
 
 
 
@@ -59,7 +60,7 @@ export default function Home() {
     </div>
   </div>
 </div>
-
+    <Carrousel />
     </div>
   
   )

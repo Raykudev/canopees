@@ -50,6 +50,7 @@ ul {
     margin-top: 15px;
     width: 12rem;
     cursor: pointer;
+    font-weight: 600;
 }
 
 /* Bloc de carte */
