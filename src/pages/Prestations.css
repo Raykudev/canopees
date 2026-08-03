@@ -1,0 +1,18 @@
+.prestations {
+  padding: 60px 0;
+  background-color: #f1f1f1;
+}
+
+.prestations h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
+  color: black;
+}
+
+.prestation-titre-wrapper h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: black;
+}

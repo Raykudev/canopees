@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "titre": "Elagage et abattage d'arbres",
+    "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
+    "image": "/images/prestations/arbre.jpg",
+    "alt": "Un élagueur en action sur un arbre",
+    "realisations": [
+      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
+      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
+      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
+      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
+      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
+      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+    ]
+  },
+
+  {
+    "id": 2,
+    "titre": "Conception et réalisation d'espaces verts",
+    "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
+    "image": "/images/prestations/vert.jpg",
+    "alt": "Espace vert fleuri fraîchement aménagé",
+    "realisations": [
+      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
+      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
+      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
+      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
+      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
+      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+    ]
+  },
+
+  {
+    "id": 3,
+    "titre": "Entretien des espaces verts",
+    "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
+    "image": "/images/prestations/entretien.jpg",
+    "alt": "Espace vert entretenu avec pelouse tondue",
+    "realisations": [
+      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
+      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
+      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
+      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
+      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
+      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+    ]
+  },
+
+  {
+    "id": 4,
+    "titre": "Taille des haies",
+    "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
+    "image": "/images/prestations/haies.jpg",
+    "alt": "Taille d'une haie au sécateur",
+    "realisations": [
+      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
+      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
+      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
+      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
+      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
+      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+    ]
+  },
+
+  {
+    "id": 5,
+    "titre": "Valorisation des déchets verts ( compostage )",
+    "texte": "Pour le respect de l'environnement, nous collectons les déchets verts, afin de les réutiliser pour du compostage.",
+    "image": "/images/prestations/eco.jpg",
+    "alt": "Illustration du recyclage des déchets verts",
+    "realisations": [
+      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
+      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
+      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
+      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
+      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
+      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+    ]
+  }
+]

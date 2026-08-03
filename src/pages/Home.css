@@ -43,14 +43,22 @@
   color: #ACC421;
 }
 
-li {
-  padding-top: 3px;
+.text ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-ul {
-  padding-left: 20px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.text li {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.text li::marker {
+  color: #ACC421;
 }
 
 .text button {
@@ -78,6 +86,7 @@ ul {
 .public-cible p {
   padding-bottom: 50px;
   font-size: 18px;
+  color: rgb(62, 61, 61);
 }
 
 .cartes {
@@ -151,11 +160,6 @@ ul {
   .carte {
     width: 45%;
   }
-
-  .carrousel-photos img {
-    width: 200px;
-    height: 200px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -201,6 +205,12 @@ ul {
   }
   .card-1{
     height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carte {
+    width: 90%;
   }
 }
 

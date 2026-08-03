@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "titre": "Conception et réalisation d'espaces verts",
+    "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
+    "image": "/images/prestations/vert.jpg",
+    "alt": "Espace vert fleuri fraîchement aménagé",
+    "prix": 899
+  },
+
+  {
+    "id": 2,
+    "titre": "Entretien des espaces verts",
+    "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
+    "image": "/images/prestations/entretien.jpg",
+    "alt": "Espace vert entretenu avec pelouse tondue",
+    "prix": 299
+  },
+
+  {
+    "id": 3,
+    "titre": "Taille des haies",
+    "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
+    "image": "/images/prestations/haies.jpg",
+    "alt": "Taille d'une haie au sécateur",
+    "prix": 399
+  },
+
+  {
+    "id": 4,
+    "titre": "Elagage et abattage d'arbres",
+    "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
+    "image": "/images/prestations/arbre.jpg",
+    "alt": "Un élagueur en action sur un arbre",
+    "prix": 599
+  },
+
+  {
+    "id": 5,
+    "titre": "Valorisation des déchets verts ( compostage )",
+    "texte": "La collecte des déchets verts est incluse dans chaque prestation. Pour une demande de collecte seule, contactez-nous directement pour étudier votre besoin.",
+    "image": "/images/prestations/eco.jpg",
+    "alt": "Illustration du recyclage des déchets verts",
+    "prix": null
+  }
+]

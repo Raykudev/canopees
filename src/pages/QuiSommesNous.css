@@ -205,6 +205,10 @@
         width: 70px;
         height: 70px;
     }
+    .fondateurs .bandeau,
+    .fondateurs .bandeau-2 {
+        height: auto;
+    }
 }
 
 /* VALEURS */
