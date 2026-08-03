@@ -6,12 +6,12 @@
     "image": "/images/prestations/arbre.jpg",
     "alt": "Un élagueur en action sur un arbre",
     "realisations": [
-      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
-      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
-      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
-      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
-      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
-      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+      { "image": "/images/prestations/elagage/elagage-1.jpg", "alt": "Réalisation d'élagage 1" },
+      { "image": "/images/prestations/elagage/elagage-2.jpg", "alt": "Réalisation d'élagage 2" },
+      { "image": "/images/prestations/elagage/elagage-3.jpg", "alt": "Réalisation d'élagage 3" },
+      { "image": "/images/prestations/elagage/elagage-4.jpg", "alt": "Réalisation d'élagage 4" },
+      { "image": "/images/prestations/elagage/elagage-5.jpg", "alt": "Réalisation d'élagage 5" },
+      { "image": "/images/prestations/elagage/elagage-6.jpg", "alt": "Réalisation d'élagage 6" }
     ]
   },
 
@@ -22,12 +22,12 @@
     "image": "/images/prestations/vert.jpg",
     "alt": "Espace vert fleuri fraîchement aménagé",
     "realisations": [
-      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
-      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
-      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
-      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
-      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
-      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+      { "image": "/images/prestations/conception/conception-1.jpg", "alt": "Réalisation de conception d'espace vert 1" },
+      { "image": "/images/prestations/conception/conception-2.jpg", "alt": "Réalisation de conception d'espace vert 2" },
+      { "image": "/images/prestations/conception/conception-3.jpg", "alt": "Réalisation de conception d'espace vert 3" },
+      { "image": "/images/prestations/conception/conception-4.jpg", "alt": "Réalisation de conception d'espace vert 4" },
+      { "image": "/images/prestations/conception/conception-5.jpg", "alt": "Réalisation de conception d'espace vert 5" },
+      { "image": "/images/prestations/conception/conception-6.jpg", "alt": "Réalisation de conception d'espace vert 6" }
     ]
   },
 

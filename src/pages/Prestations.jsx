@@ -17,7 +17,6 @@ export default function Prestations() {
       <p>Découvrez notre savoir-faire en images !</p>
       </div>
 
-      <h1>Nos prestations</h1>
 
       {prestations.map((prestation, index) => (
         <div key={prestation.id} className="prestation-titre-wrapper">
