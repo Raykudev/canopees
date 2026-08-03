@@ -23,7 +23,7 @@ export default function Prestations() {
             inverse={index % 2 === 1}
           >
             <Boutton onClick={() => setPrestationOuverte(prestation)}>
-              Voir nos réalisations
+              Découvrir nos réalisations
             </Boutton>
           </BlocTexteImage>
         </div>

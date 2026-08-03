@@ -3,6 +3,13 @@
   padding: 50px 0;
   background-color: white;
 }
+.fondateurs h1 {
+  margin-bottom: 100px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+
+}
 
 .fondateurs h2 {
   margin-bottom: 30px;
@@ -261,7 +268,6 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: inline-block;
 }
 
 .icone-bleu { 

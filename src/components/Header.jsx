@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import logo from "../assets/logo.png"
 import './Header.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
 
@@ -41,11 +41,11 @@ function Header() {
 
       <nav ref={navRef} className={menuOuvert ? "nav-ouvert" : "nav-ferme"}>
         <ul onClick={fermerMenu}>
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/qui-sommes-nous">Qui sommes-nous</Link></li>
-          <li><Link to="/prestations">Prestations</Link></li>
-          <li><Link to="/tarifs">Tarifs</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><NavLink to="/" end className={({ isActive }) => isActive ? 'lien-actif' : ''}>Accueil</NavLink></li>
+          <li><NavLink to="/qui-sommes-nous" className={({ isActive }) => isActive ? 'lien-actif' : ''}>Qui sommes-nous</NavLink></li>
+          <li><NavLink to="/prestations" className={({ isActive }) => isActive ? 'lien-actif' : ''}>Prestations</NavLink></li>
+          <li><NavLink to="/tarifs" className={({ isActive }) => isActive ? 'lien-actif' : ''}>Tarifs</NavLink></li>
+          <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'lien-actif' : ''}>Contact</NavLink></li>
         </ul>
       </nav>
     </header>

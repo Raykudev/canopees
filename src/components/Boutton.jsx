@@ -21,3 +21,6 @@ function Boutton({ to, onClick, children, type = 'button' }) {
 }
 
 export default Boutton;
+
+
+// Boutton a double fonction au click tu execute la fonction onClick si elle est définie sinon il redirige vers la page "to" pour naviguer vers une autre page.

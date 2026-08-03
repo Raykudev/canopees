@@ -8,7 +8,7 @@ function QuiSommeNous() {
   return (
     <div>
 <div className="fondateurs">
-  <h2>Nos fondateurs</h2>
+  <h1>Nos fondateurs</h1>
 
   <div className="cartes">
     <div className="carte">

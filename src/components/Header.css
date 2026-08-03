@@ -39,6 +39,11 @@ header a {
   color: white;
 }
 
+.lien-actif {
+  color: #692B85;
+  font-weight: 600;
+}
+
 .burger {
   display: none;
 }
@@ -93,6 +98,10 @@ header a {
     color: #333;
     font-size: 18px;
     border-bottom: 1px solid #C4C4C4;
+  }
+
+  .nav-ouvert ul li a.lien-actif {
+    color: #692B85;
   }
 
   .nav-ouvert ul li a:hover {
