@@ -76,6 +76,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   padding: 12px;
   border-top-right-radius: 25px;
@@ -94,12 +95,14 @@
   color: #F1A80F;
   font-weight: 500;
   font-size: 20px;
+  padding-right: 45px;
 }
 
 .fondateurs .bandeau-2 span{
     color: #692B85;
     font-weight: 500;
     font-size: 20px;
+    padding-right: 45px;
 }
 
 /* DETAILS */

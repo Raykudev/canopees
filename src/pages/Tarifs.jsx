@@ -12,6 +12,7 @@ const etapes = [
 export default function Tarifs() {
   return (
     <div className="tarifs">
+      <h1 className="tarifs-titre">Nos tarifs</h1>
       <p className="tarifs-intro">
         Nos tarifs varient selon la surface, la complexité du terrain et vos besoins spécifiques.
         Voici un aperçu de nos prestations, contactez-nous pour un devis personnalisé et gratuit.
@@ -29,7 +30,7 @@ export default function Tarifs() {
         </div>
       </div>
 
-      <h2 className="tarifs-titre">Nos tarifs</h2>
+      
 
       {tarifs.map((tarif, index) => (
         <BlocTexteImage
@@ -43,7 +44,7 @@ export default function Tarifs() {
           {tarif.prix && (
             <>
               <p className="tarif-prix">À partir de : {tarif.prix} €</p>
-              <Boutton to="/contact">Commander en ligne</Boutton>
+              <Boutton to="/contact">Faire une demande de devis</Boutton>
             </>
           )}
         </BlocTexteImage>

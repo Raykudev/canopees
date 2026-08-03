@@ -12,9 +12,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  background-color: #075F29;
+  background-color: #f1f1f1;
   font-size: 20px;
   width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 header img {
@@ -36,7 +37,9 @@ header ul {
 
 header a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .lien-actif {

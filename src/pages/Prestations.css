@@ -5,9 +5,16 @@
 
 .prestations h1 {
   text-align: center;
-  margin-bottom: 100px;
+  margin: 100px;
   font-weight: 600;
   color: black;
+}
+.prestations .cadre .img-cano {
+  width: 60%;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 20px;
 }
 
 .prestation-titre-wrapper h2 {
@@ -19,4 +26,24 @@
 .prestations .btn {
   color: white;
   font-weight: 600;
+}
+
+.prestations .cadre {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 90px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 8px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .prestations .cadre {
+    width: 80%;
+  }
+  .prestations .cadre .img-cano {
+    width: 80%;
+  }
 }

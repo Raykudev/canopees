@@ -2,6 +2,12 @@
   padding: 60px 0;
   background-color: #f1f1f1;
 }
+.tarifs h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: 600;
+  color: black;
+}
 
 .tarifs-intro {
   max-width: 700px;
@@ -18,7 +24,8 @@
 }
 
 .comment-ca-marche h2 {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  margin-top: 90px;
   font-weight: 600;
   color: black;
 }
@@ -84,6 +91,9 @@
   margin-bottom: 35px;
   font-weight: 600;
   color: black;
+}
+.tarifs .btn {
+  font-weight: 600;
 }
 
 /* RESPONSIVE */
