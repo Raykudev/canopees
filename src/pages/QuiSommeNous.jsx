@@ -52,7 +52,48 @@ function QuiSommeNous() {
     </div>
     </div>
 
+    <div className="valeurs">
+      <h2>Nos valeurs</h2>
+      <div className="valeurs-contenu">
+        <div className="valeurs-colonne">
+          <div className="carte-valeur">
+            <span className="icone-valeur icone-bleu"></span>
+            <h3>Respect de l'environnement</h3>
+            <p>Nous privilégions des pratiques durables et respectueuses de la biodiversité sur chaque chantier.</p>
+          </div>
+          <div className="carte-valeur">
+            <span className="icone-valeur icone-mauve"></span>
+            <h3>Savoir-faire</h3>
+            <p>Notre équipe s'appuie sur une expertise technique éprouvée pour garantir des réalisations durables.</p>
+          </div>
+          <div className="carte-valeur">
+            <span className="icone-valeur icone-vert"></span>
+            <h3>Proximité client</h3>
+            <p>Nous restons à l'écoute de chaque client pour construire un projet qui correspond vraiment à ses besoins.</p>
+          </div>
+        </div>
 
+        <img src="/images/histoire/arbre.webp" alt="Plante en pot" className="valeurs-image" />
+
+        <div className="valeurs-colonne">
+          <div className="carte-valeur">
+            <span className="icone-valeur icone-orange"></span>
+            <h3>Qualité et personnalisation</h3>
+            <p>Nous misons sur la qualité des matériaux utilisés et la personnalisation des projets en fonction de vos goûts.</p>
+          </div>
+          <div className="carte-valeur">
+            <span className="icone-valeur icone-rose"></span>
+            <h3>Fiabilité</h3>
+            <p>Nous respectons nos engagements de délais et de budget sur chacun de nos chantiers.</p>
+          </div>
+          <div className="carte-valeur">
+            <span className="icone-valeur icone-rouge"></span>
+            <h3>Passion</h3>
+            <p>Chaque projet est mené avec le même goût du travail bien fait, du premier croquis à la dernière plantation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
     
 

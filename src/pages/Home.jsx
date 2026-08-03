@@ -44,7 +44,7 @@ export default function Home() {
     </div>
 
     <div className="carte">
-      <img src="/images/PublicCible/entreprise.jpg" alt="Espace vert professionnel" />
+      <img className="card-1" src="/images/PublicCible/entreprise.jpg" alt="Espace vert professionnel" />
       <div className="bandeau">
         <img src="/images/PublicCible/entrepriseCircle.jpg" alt="" className="icone" />
         <span>Professionnels</span>
@@ -52,7 +52,7 @@ export default function Home() {
     </div>
 
     <div className="carte">
-      <img src="/images/PublicCible/collectivite.jpg" alt="Espace vert collectivité" />
+      <img className="card-1" src="/images/PublicCible/collectivite.jpg" alt="Espace vert collectivité" />
       <div className="bandeau">
         <img src="/images/PublicCible/collectiviteCircle.jpg" alt="" className="icone" />
         <span>Collectivités</span>

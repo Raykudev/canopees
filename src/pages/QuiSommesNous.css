@@ -1,12 +1,12 @@
 .fondateurs {
   text-align: center;
-  padding: 60px 0;
+  padding: 50px 0;
   background-color: white;
 }
 
 .fondateurs h2 {
-  padding: 30px;
   margin-bottom: 30px;
+  color: black;
 }
 
 .fondateurs .cartes {
@@ -107,6 +107,7 @@
   padding: 30px;
   margin-bottom: 20px;
   font-weight: 600;
+  color: black;
 }
 .details p {
   width: 60%;
@@ -138,6 +139,7 @@
 .histoire h2 {
   margin-bottom: 40px;
   font-weight: 600;
+  color: black;
 }
 .histoire p {
   width: 30%;
@@ -193,4 +195,116 @@
         width: 70%;
         height: auto;
     }
+    .histoire p {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .fondateurs .icone{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* VALEURS */
+
+.valeurs {
+  text-align: center;
+  padding: 60px 0;
+  background-color: white;
+}
+
+.valeurs h2 {
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.valeurs-contenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.valeurs-colonne {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.valeurs-image {
+  width: 250px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carte-valeur {
+  position: relative;
+  width: 320px;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  padding: 25px 20px 20px 20px;
+  text-align: left;
+}
+
+.icone-valeur {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.icone-bleu { 
+  background-color: #2A4B9B; 
+}
+.icone-mauve { 
+  background-color: #692B85; 
+}
+.icone-vert { 
+  background-color: #098136; 
+}
+.icone-orange { 
+  background-color: #F1A80F; 
+}
+.icone-rose { 
+  background-color: #DA4D66; 
+}
+.icone-rouge { 
+  background-color: #B23B53; 
+}
+
+.carte-valeur h3 {
+  color: #F1A80F;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.carte-valeur p {
+  color: #5e5e5e;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE VALEURS */
+
+@media (max-width: 1010px) {
+  .valeurs-contenu {
+    flex-direction: column;
+  }
+
+  .valeurs-image {
+    width: 230px;
+    height: 550px;
+  }
+
+  .carte-valeur {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
