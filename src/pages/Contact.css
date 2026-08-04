@@ -130,6 +130,7 @@
 .contact-form textarea {
   min-height: 100px;
   resize: vertical;
+  color: black;
 }
 
 .contact-rgpd {

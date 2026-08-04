@@ -26,7 +26,7 @@ export default function Home() {
         <li>Valorisation des déchets verts. ( compostage )
         </li>
       </ul>
-        <Boutton to="/Tarifs">En savoir plus</Boutton>
+        <Boutton to="/Prestations">En savoir plus</Boutton>
       </div>
     </div>
 
