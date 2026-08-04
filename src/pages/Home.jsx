@@ -1,13 +1,13 @@
+import { useEffect } from 'react'
 import Slider from '../components/Slider'
 import './Home.css'
 import Boutton from '../components/Boutton'
 import Carrousel from '../components/Carrousel'
 
-
-
-
 export default function Home() {
-
+  useEffect(() => {
+    document.title = "Canopées – Création et entretien d'espaces verts"
+  }, [])
 
   return (
    <div>
@@ -15,8 +15,8 @@ export default function Home() {
     <div className='presentation'>
       <img src="/images/presentation/garden.jpg" alt="Grand jardin remplie de fleurs de toutes les couleurs" />
       <div className='text'>
-      <h2>Canopées</h2>
-      <h3>Société spécialisé dans la création et l'entretien d'espaces verts.</h3>
+      <h1>Canopées</h1>
+      <h2>Société spécialisé dans la création et l'entretien d'espaces verts.</h2>
       <p className='services'>Les services <span>Canopées :</span></p>
       <ul>
         <li>Conception et réalisation d'espaces verts.</li>

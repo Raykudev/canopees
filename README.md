@@ -1,16 +1,37 @@
-# React + Vite
+# Canopées
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site vitrine pour une entreprise de paysagisme, réalisé dans le cadre du MSPR.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React + Vite
+- React Router (navigation entre les pages)
+- CSS classique (un fichier par page/composant)
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Accueil
+- Qui sommes-nous
+- Prestations
+- Tarifs
+- Contact
+- CGU / CGV / Mentions légales
 
-## Expanding the ESLint configuration
+Le formulaire de contact est uniquement côté front : il n'y a pas de vrai backend, donc pas d'envoi réel de mail. La soumission affiche juste un message de confirmation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Lancer le projet
+
+```
+npm install
+npm run dev
+```
+
+Le site est ensuite accessible sur `http://localhost:5173`.
+
+## Autres commandes
+
+```
+npm run build     # génère la version de production dans dist/
+npm run lint      # vérifie le code avec ESLint
+npm run preview   # prévisualise le build de production
+```

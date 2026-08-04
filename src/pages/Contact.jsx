@@ -1,8 +1,12 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import logo from "../assets/logo.png"
 import './Contact.css'
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact – Canopées"
+  }, [])
+
   const [formData, setFormData] = useState({
     nom: '',
     prenom: '',
@@ -43,7 +47,7 @@ export default function Contact() {
           <h3>Contactez-nous</h3>
 
           <p>☎ 00 11 22 33 44</p>
-          <p>📍 La belle adresse, 30000 Beauvillage</p>
+          <p>📍 La belle adresse, 34000 Montpellier</p>
           <p>🕐 Du lundi au vendredi, 08h00-18h00</p>
 
           <iframe
@@ -67,7 +71,7 @@ export default function Contact() {
             </div>
 
             <div className="contact-form-ligne">
-              <input type="email" name="mail" placeholder="Mail" value={formData.mail} onChange={handleChange} />
+              <input type="email" name="mail" placeholder="Mail (facultatif)" value={formData.mail} onChange={handleChange} />
               <input type="tel" name="telephone" placeholder="Téléphone" value={formData.telephone} onChange={handleChange} required />
             </div>
 

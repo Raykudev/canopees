@@ -1,21 +1,28 @@
+import { useEffect } from 'react'
 import './QuiSommesNous.css'
 
-
-
-
 function QuiSommeNous() {
+  useEffect(() => {
+    document.title = "Qui sommes-nous – Canopées"
+  }, [])
 
   return (
     <div>
+    <div className="details">
+      <h1>Qui sommes-nous ?</h1>
+      <p>Canopées est une entreprise spécialisée dans la création et l'entretien d'espaces verts, pour les particuliers, professionnels et collectivités.<br></br>
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, assumenda minus! Voluptate vel rerum accusantium laborum provident obcaecati, quis expedita.
+      </p>
+    </div>
 <div className="fondateurs">
-  <h1>Nos fondateurs</h1>
+  <h2>Nos fondateurs</h2>
 
   <div className="cartes">
     <div className="carte">
       <img className="card-1" src="/images/fondateurs/image-1.jpg" alt="Photo de profil de Bob, fondateur de Canopées" />
-      
+
       <span className="badge-fondateur">Fondateur</span>
-      
+
       <p className="descriptif-fondateur">Passionné de nature depuis toujours, Bob a fondé Canopées pour partager son amour des espaces verts.</p>
 
       <div className="bandeau">
@@ -26,9 +33,9 @@ function QuiSommeNous() {
 
     <div className="carte">
       <img className="card-1" src="/images/fondateurs/image-2.jpg" alt="Photo de profil de Tom, cofondateur de Canopées" />
-      
+
       <span className="badge-cofondateur">Co-Fondateur</span>
-      
+
       <p className="descriptif-fondateur">Expert en aménagement paysager, Tom apporte son savoir-faire technique à chaque projet Canopées.</p>
 
       <div className="bandeau-2">
@@ -36,14 +43,8 @@ function QuiSommeNous() {
         <span>Tom</span>
       </div>
     </div>
-  </div>  
+  </div>
 </div>
-    <div className="details">
-      <h2>Qui sommes-nous ?</h2>
-      <p>Canopées est une entreprise spécialisée dans la création et l'entretien d'espaces verts, pour les particuliers, professionnels et collectivités.<br></br>
-        lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, assumenda minus! Voluptate vel rerum accusantium laborum provident obcaecati, quis expedita.
-      </p>
-    </div>
     <div className="histoire">
       <h2>Histoire de l'entreprise</h2>
       <div className="history">

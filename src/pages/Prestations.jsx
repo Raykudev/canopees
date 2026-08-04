@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import prestations from '../data/prestations.json'
 import BlocTexteImage from '../components/BlocTexteImage'
 import Boutton from '../components/Boutton'
@@ -9,11 +9,15 @@ import logo from "../assets/logo.png"
 export default function Prestations() {
   const [prestationOuverte, setPrestationOuverte] = useState(null)
 
+  useEffect(() => {
+    document.title = "Nos prestations – Canopées"
+  }, [])
+
   return (
     <div className="prestations">
       <div className="cadre">
       <img className="img-cano" src={logo} alt="logo de l'entreprise Canopees" />
-      <h2>Découvrez nos réalisations à Montpellier et alentours</h2>
+      <h1>Découvrez nos réalisations à Montpellier et alentours</h1>
       <p>Découvrez notre savoir-faire en images !</p>
       </div>
 

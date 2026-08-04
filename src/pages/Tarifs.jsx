@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import tarifs from '../data/tarifs.json'
 import BlocTexteImage from '../components/BlocTexteImage'
 import Boutton from '../components/Boutton'
@@ -10,6 +11,10 @@ const etapes = [
 ]
 
 export default function Tarifs() {
+  useEffect(() => {
+    document.title = "Nos tarifs – Canopées"
+  }, [])
+
   return (
     <div className="tarifs">
       <h1 className="tarifs-titre">Nos tarifs</h1>

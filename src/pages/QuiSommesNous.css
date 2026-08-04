@@ -3,16 +3,9 @@
   padding: 50px 0;
   background-color: white;
 }
-.fondateurs h1 {
-  margin-bottom: 100px;
-  font-weight: 600;
-  color: black;
-  text-align: center;
-
-}
-
 .fondateurs h2 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-weight: 600;
   color: black;
 }
 
@@ -113,7 +106,8 @@
   background-color: #f1f1f1;
   line-height: 1.6;
 }
-.details h2 {
+.details h1 {
+  font-size: 24px;
   padding: 30px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -161,7 +155,7 @@
 }
 .histoire p span {
   font-weight: 600;
-  color: #ACC421;
+  color: #098136;
 }
 
 /* RESPONSIVE Fondateurs */
@@ -293,7 +287,7 @@
 }
 
 .carte-valeur h3 {
-  color: #F1A80F;
+  color: black;
   font-size: 18px;
   margin-bottom: 10px;
 }
