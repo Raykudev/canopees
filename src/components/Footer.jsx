@@ -23,9 +23,9 @@ function Footer() {
         </nav>
         <div className="footer-legal">
             <ul>
-                <li><a href="#">CGU</a></li>
-                <li><a href="#">CGV</a></li>
-                <li><a href="#">Mentions légales</a></li>
+                <li><Link to="/cgu">CGU</Link></li>
+                <li><Link to="/cgv">CGV</Link></li>
+                <li><Link to="/mentions-legales">Mentions légales</Link></li>
             </ul>
         </div>
         </div>
