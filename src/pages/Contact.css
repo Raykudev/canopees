@@ -1,0 +1,161 @@
+.contact {
+  padding: 60px 0;
+  background-color: #f1f1f1;
+}
+
+.contact-intro {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-intro img {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-intro h1 {
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.contact-intro p {
+  color: #5e5e5e;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  padding: 0 60px;
+}
+
+.contact-infos {
+  flex: 1;
+  max-width: 350px;
+  padding: 30px 25px;
+  border-radius: 15px;
+  background-color: #075F29;
+  background-image: url('/images/contact/bart-zimny-W5XTTLpk1-I-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-infos h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+
+.contact-infos p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-map {
+  width: 100%;
+  flex: 1;
+  min-height: 150px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact-form {
+  flex: 1.4;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-ligne {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #5e5e5e;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-rgpd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #5e5e5e;
+}
+
+.contact-rgpd input {
+  width: auto;
+}
+
+.contact-recaptcha {
+  font-size: 11px;
+  color: #999;
+}
+
+.btn-envoyer {
+  align-self: flex-start;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-envoyer:hover {
+  background-color: #333;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .contact-infos,
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-form-ligne {
+    flex-direction: column;
+  }
+}

@@ -3,15 +3,15 @@
     "id": 1,
     "titre": "Elagage et abattage d'arbres",
     "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
-    "image": "/images/prestations/arbre.jpg",
-    "alt": "Un élagueur en action sur un arbre",
+    "image": "/images/prestations/imageDur/elagage-canopees.jpg",
+    "alt": "Un élagueur de Canopees en action sur un arbre",
     "realisations": [
-      { "image": "/images/prestations/elagage/elagage-1.jpg", "alt": "Réalisation d'élagage 1" },
-      { "image": "/images/prestations/elagage/elagage-2.jpg", "alt": "Réalisation d'élagage 2" },
-      { "image": "/images/prestations/elagage/elagage-3.jpg", "alt": "Réalisation d'élagage 3" },
-      { "image": "/images/prestations/elagage/elagage-4.jpg", "alt": "Réalisation d'élagage 4" },
-      { "image": "/images/prestations/elagage/elagage-5.jpg", "alt": "Réalisation d'élagage 5" },
-      { "image": "/images/prestations/elagage/elagage-6.jpg", "alt": "Réalisation d'élagage 6" }
+      { "image": "/images/prestations/elagage/elagage-1.jpg", "alt": "Réalisation d'élagage" },
+      { "image": "/images/prestations/elagage/elagage-2.jpg", "alt": "Réalisation d'élagage" },
+      { "image": "/images/prestations/elagage/elagage-3.jpg", "alt": "Réalisation d'élagage" },
+      { "image": "/images/prestations/elagage/elagage-4.jpg", "alt": "Réalisation d'élagage" },
+      { "image": "/images/prestations/elagage/elagage-5.jpg", "alt": "Réalisation d'élagage" },
+      { "image": "/images/prestations/elagage/elagage-6.jpg", "alt": "Réalisation d'élagage" }
     ]
   },
 
@@ -19,15 +19,15 @@
     "id": 2,
     "titre": "Conception et réalisation d'espaces verts",
     "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
-    "image": "/images/prestations/vert.jpg",
+    "image": "/images/prestations/imageDur/vert.jpg",
     "alt": "Espace vert fleuri fraîchement aménagé",
     "realisations": [
-      { "image": "/images/prestations/conception/conception-1.jpg", "alt": "Réalisation de conception d'espace vert 1" },
-      { "image": "/images/prestations/conception/conception-2.jpg", "alt": "Réalisation de conception d'espace vert 2" },
-      { "image": "/images/prestations/conception/conception-3.jpg", "alt": "Réalisation de conception d'espace vert 3" },
-      { "image": "/images/prestations/conception/conception-4.jpg", "alt": "Réalisation de conception d'espace vert 4" },
-      { "image": "/images/prestations/conception/conception-5.jpg", "alt": "Réalisation de conception d'espace vert 5" },
-      { "image": "/images/prestations/conception/conception-6.jpg", "alt": "Réalisation de conception d'espace vert 6" }
+      { "image": "/images/prestations/conception/conception-1.jpg", "alt": "Réalisation d'une conception d'espace vert conçue par Canopees" },
+      { "image": "/images/prestations/conception/conception-2.jpg", "alt": "Réalisation d'une conception d'espace vert conçue par Canopees" },
+      { "image": "/images/prestations/conception/conception-3.jpg", "alt": "Réalisation d'une conception d'espace vert conçue par Canopees" },
+      { "image": "/images/prestations/conception/conception-4.jpg", "alt": "Réalisation d'une conception d'espace vert conçue par Canopees" },
+      { "image": "/images/prestations/conception/conception-5.jpg", "alt": "Réalisation d'une conception d'espace vert conçue par Canopees" },
+      { "image": "/images/prestations/conception/conception-6.jpg", "alt": "Réalisation d'une conception d'espace vert conçue par Canopees" }
     ]
   },
 
@@ -35,15 +35,15 @@
     "id": 3,
     "titre": "Entretien des espaces verts",
     "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
-    "image": "/images/prestations/entretien.jpg",
+    "image": "/images/prestations/imageDur/entretien-canopees.jpg",
     "alt": "Espace vert entretenu avec pelouse tondue",
     "realisations": [
-      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
-      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
-      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
-      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
-      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
-      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+      { "image": "/images/prestations/entretien/entretien1.jpg", "alt": "Jardin fleuri avec des arbres entourés d'une bordure fleuri" },
+      { "image": "/images/prestations/entretien/entretien2.jpg", "alt": "Grand espaces fleuri, avec de nombreuses fleurs de toutes les couleurs" },
+      { "image": "/images/prestations/entretien/entretien3.jpg", "alt": "Parc avec des arbres taillés et une pelouse vertes fraichement entretenu" },
+      { "image": "/images/prestations/entretien/entretien4.jpg", "alt": "Une personne tondant la pelouse, une autre personne nettoyant la bordure du gazon et des arbres" },
+      { "image": "/images/prestations/entretien/entretien5.jpg", "alt": "Une personnes soufflant le reste d'herbes coupé" },
+      { "image": "/images/prestations/entretien/entretien6.jpg", "alt": "Un immense parc, avec de magnifique arbres, une pelouse vertes fraichement entretenu, et un chemin en terre pour se balader a l'interieur" }
     ]
   },
 
@@ -51,15 +51,15 @@
     "id": 4,
     "titre": "Taille des haies",
     "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ligula in pharetra placerat. Integer eros lectus, scelerisque a lectus a, lacinia hendrerit erat.",
-    "image": "/images/prestations/haies.jpg",
+    "image": "/images/prestations/imageDur/haie.jpg",
     "alt": "Taille d'une haie au sécateur",
     "realisations": [
-      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
-      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
-      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
-      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
-      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
-      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+      { "image": "/images/prestations/taille/taille1.jpg", "alt": "Haie taillé en forme de sapin" },
+      { "image": "/images/prestations/taille/taille2.jpg", "alt": "3 Haie taillé en boules" },
+      { "image": "/images/prestations/taille/taille3.jpg", "alt": "Espace vert entretenu avec des haies sculptées et un jardin paysager soigné" },
+      { "image": "/images/prestations/taille/taille4.jpg", "alt": "chemin bordé de haies, avec une haie en arche a la fin" },
+      { "image": "/images/prestations/taille/taille5.jpg", "alt": "Espace vert soigneusement entretenu devant un bâtiment moderne avec haies taillées et pelouse" },
+      { "image": "/images/prestations/taille/taille6.jpg", "alt": "Végétation soigneusement taillée formant une arche naturelle dans un jardin paysager" }
     ]
   },
 
@@ -67,15 +67,15 @@
     "id": 5,
     "titre": "Valorisation des déchets verts ( compostage )",
     "texte": "Pour le respect de l'environnement, nous collectons les déchets verts, afin de les réutiliser pour du compostage.",
-    "image": "/images/prestations/eco.jpg",
+    "image": "/images/prestations/imageDur/eco.jpg",
     "alt": "Illustration du recyclage des déchets verts",
     "realisations": [
-      { "image": "/images/realisations/realisation-1.jpg", "alt": "Réalisation 1" },
-      { "image": "/images/realisations/realisation-2.jpg", "alt": "Réalisation 2" },
-      { "image": "/images/realisations/realisation-3.jpg", "alt": "Réalisation 3" },
-      { "image": "/images/realisations/realisation-4.jpg", "alt": "Réalisation 4" },
-      { "image": "/images/realisations/realisation-5.jpg", "alt": "Réalisation 5" },
-      { "image": "/images/realisations/realisation-6.jpg", "alt": "Réalisation 6" }
+      { "image": "/images/prestations/eco/eco1.jpg", "alt": "Camion collectant les branches et l'herbes coupées" },
+      { "image": "/images/prestations/eco/eco2.jpg", "alt": "Dépôt de déchets verts pour compostage" },
+      { "image": "/images/prestations/eco/eco3.jpg", "alt": "Gros tas de compost devenu du compost mûr" },
+      { "image": "/images/prestations/eco/eco4.jpg", "alt": "2 agents de l'entreprise Canopées qui collecte les déchets verts d'un particulier" },
+      { "image": "/images/prestations/eco/eco5.jpg", "alt": "2 agents de l'entreprise Canopées qui collecte les déchets verts d'un particulier" },
+      { "image": "/images/prestations/eco/eco6.jpg", "alt": "Machine faisant de longue rangées de compost" }
     ]
   }
 ]
