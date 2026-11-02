@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import prestations from '../data/prestations.json'
 import BlocTexteImage from '../components/BlocTexteImage'
 import Boutton from '../components/Boutton'
 import Modale from '../components/Modale'
@@ -7,10 +6,15 @@ import './Prestations.css'
 import logo from "../assets/logo.png"
 
 export default function Prestations() {
+  const [prestations, setPrestations] = useState([])
   const [prestationOuverte, setPrestationOuverte] = useState(null)
 
   useEffect(() => {
     document.title = "Nos prestations – Canopées"
+
+    fetch(`${import.meta.env.VITE_API_URL}/api/prestations`)
+      .then((reponse) => reponse.json())
+      .then((data) => setPrestations(data.member))
   }, [])
 
   return (
@@ -28,7 +32,7 @@ export default function Prestations() {
           <BlocTexteImage
             titre={prestation.titre}
             texte={prestation.texte}
-            image={prestation.image}
+            image={`${import.meta.env.VITE_API_URL}${prestation.image}`}
             alt={prestation.alt}
             inverse={index % 2 === 1}
           >
