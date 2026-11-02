@@ -1,5 +1,4 @@
-import { useEffect } from 'react'
-import tarifs from '../data/tarifs.json'
+import { useState, useEffect } from 'react'
 import BlocTexteImage from '../components/BlocTexteImage'
 import Boutton from '../components/Boutton'
 import './Tarifs.css'
@@ -11,8 +10,14 @@ const etapes = [
 ]
 
 export default function Tarifs() {
+  const [tarifs, setTarifs] = useState([])
+
   useEffect(() => {
     document.title = "Nos tarifs – Canopées"
+
+    fetch(`${import.meta.env.VITE_API_URL}/api/prestations`)
+      .then((reponse) => reponse.json())
+      .then((data) => setTarifs(data.member))
   }, [])
 
   return (
@@ -41,14 +46,14 @@ export default function Tarifs() {
         <BlocTexteImage
           key={tarif.id}
           titre={tarif.titre}
-          texte={tarif.texte}
-          image={tarif.image}
+          texte={tarif.texteTarif ?? tarif.texte}
+          image={`${import.meta.env.VITE_API_URL}${tarif.image}`}
           alt={tarif.alt}
           inverse={index % 2 === 1}
         >
           {tarif.prix && (
             <>
-              <p className="tarif-prix">À partir de : {tarif.prix} €</p>
+              <p className="tarif-prix">À partir de : {tarif.prix / 100} €</p>
               <Boutton to="/contact">Faire une demande de devis</Boutton>
             </>
           )}
