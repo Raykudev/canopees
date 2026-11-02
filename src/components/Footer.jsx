@@ -1,16 +1,24 @@
+import { useState, useEffect } from 'react'
 import logo from "../assets/logo.png"
 import './Footer.css'
 import { Link } from 'react-router-dom'
 
 function Footer() {
+  const [entreprise, setEntreprise] = useState(null)
+
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_API_URL}/api/entreprises`)
+      .then((reponse) => reponse.json())
+      .then((data) => setEntreprise(data.member[0]))
+  }, [])
+
   return (
     
     <footer>
         <div className="footer-colonnes">
         <div className="footer-logo">
             <img src={logo} alt="logo de l'entreprise Canopees" />
-            <p>Société spécialisé dans la création et l'entretien d'espaces verts pour les particuliers, professionnels et les collectivités territoriales depuis 2020.
-            </p>
+            <p>{entreprise?.description}</p>
         </div>
         <nav className="footer-nav">
             <ul>
