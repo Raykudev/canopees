@@ -1,37 +1,42 @@
-import { useState, useEffect } from 'react'
-import logo from "../assets/logo.png"
-import './Contact.css'
+import { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
+import "./Contact.css";
 
 export default function Contact() {
-  useEffect(() => {
-    document.title = "Contact – Canopées"
-  }, [])
-
+  
   const [formData, setFormData] = useState({
-    nom: '',
-    prenom: '',
-    mail: '',
-    telephone: '',
-    adresse: '',
-    codePostal: '',
-    ville: '',
-    message: '',
+    nom: "",
+    prenom: "",
+    mail: "",
+    telephone: "",
+    adresse: "",
+    codePostal: "",
+    ville: "",
+    message: "",
     rgpd: false,
-  })
-
-  const [envoye, setEnvoye] = useState(false)
+  });
+  
+  const [envoye, setEnvoye] = useState(false);
+  const [entreprise, setEntreprise] = useState(null);
+  
+  useEffect(() => {
+    document.title = "Contact – Canopées";
+    fetch(`${import.meta.env.VITE_API_URL}/api/entreprises`)
+      .then((reponse) => reponse.json())
+      .then((data) => setEntreprise(data.member[0]));
+  }, []);
 
   function handleChange(event) {
-    const { name, value, type, checked } = event.target
+    const { name, value, type, checked } = event.target;
     setFormData((precedent) => ({
       ...precedent,
-      [name]: type === 'checkbox' ? checked : value,
-    }))
+      [name]: type === "checkbox" ? checked : value,
+    }));
   }
 
   function handleSubmit(event) {
-    event.preventDefault()
-    setEnvoye(true)
+    event.preventDefault();
+    setEnvoye(true);
   }
 
   return (
@@ -46,9 +51,9 @@ export default function Contact() {
         <div className="contact-infos">
           <h3>Contactez-nous</h3>
 
-          <p>☎ 00 11 22 33 44</p>
-          <p>📍 La belle adresse, 34000 Montpellier</p>
-          <p>🕐 Du lundi au vendredi, 08h00-18h00</p>
+          <p>☎ {entreprise?.telephone}</p>
+          <p>📍 {entreprise?.adresse}, {entreprise?.codePostal} {entreprise?.ville}</p>
+          <p>🕐 {entreprise?.horaires}</p>
 
           <iframe
             className="contact-map"
@@ -66,37 +71,101 @@ export default function Contact() {
         ) : (
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="contact-form-ligne">
-              <input type="text" name="nom" placeholder="Nom" value={formData.nom} onChange={handleChange} required />
-              <input type="text" name="prenom" placeholder="Prenom" value={formData.prenom} onChange={handleChange} required />
+              <input
+                type="text"
+                name="nom"
+                placeholder="Nom"
+                value={formData.nom}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                name="prenom"
+                placeholder="Prenom"
+                value={formData.prenom}
+                onChange={handleChange}
+                required
+              />
             </div>
 
             <div className="contact-form-ligne">
-              <input type="email" name="mail" placeholder="Mail (facultatif)" value={formData.mail} onChange={handleChange} />
-              <input type="tel" name="telephone" placeholder="Téléphone" value={formData.telephone} onChange={handleChange} required />
+              <input
+                type="email"
+                name="mail"
+                placeholder="Mail (facultatif)"
+                value={formData.mail}
+                onChange={handleChange}
+              />
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Téléphone"
+                value={formData.telephone}
+                onChange={handleChange}
+                required
+              />
             </div>
 
-            <input type="text" name="adresse" placeholder="Adresse" value={formData.adresse} onChange={handleChange} required />
+            <input
+              type="text"
+              name="adresse"
+              placeholder="Adresse"
+              value={formData.adresse}
+              onChange={handleChange}
+              required
+            />
 
             <div className="contact-form-ligne">
-              <input type="text" name="codePostal" placeholder="Code postal" value={formData.codePostal} onChange={handleChange} required />
-              <input type="text" name="ville" placeholder="Ville" value={formData.ville} onChange={handleChange} required />
+              <input
+                type="text"
+                name="codePostal"
+                placeholder="Code postal"
+                value={formData.codePostal}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                name="ville"
+                placeholder="Ville"
+                value={formData.ville}
+                onChange={handleChange}
+                required
+              />
             </div>
 
-            <textarea name="message" placeholder="Message" value={formData.message} onChange={handleChange} required></textarea>
+            <textarea
+              name="message"
+              placeholder="Message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
 
             <label className="contact-rgpd">
-              <input type="checkbox" name="rgpd" checked={formData.rgpd} onChange={handleChange} required />
-              En soumettant ce formulaire j'accepte la politique de confidentialité
+              <input
+                type="checkbox"
+                name="rgpd"
+                checked={formData.rgpd}
+                onChange={handleChange}
+                required
+              />
+              En soumettant ce formulaire j'accepte la politique de
+              confidentialité
             </label>
 
             <p className="contact-recaptcha">
-              Ce site est protégé par reCAPTCHA, les règles de confidentialité et les conditions d'utilisation de Google s'appliquent.
+              Ce site est protégé par reCAPTCHA, les règles de confidentialité
+              et les conditions d'utilisation de Google s'appliquent.
             </p>
 
-            <button type="submit" className="btn-envoyer">Envoyer</button>
+            <button type="submit" className="btn-envoyer">
+              Envoyer
+            </button>
           </form>
         )}
       </div>
     </div>
-  )
+  );
 }
