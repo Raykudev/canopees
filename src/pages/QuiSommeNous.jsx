@@ -6,6 +6,7 @@ const COULEURS = ['icone-bleu', 'icone-mauve', 'icone-vert', 'icone-orange', 'ic
 function QuiSommeNous() {
   const [fondateurs, setFondateurs] = useState([]);
   const [valeurs, setValeurs] = useState([]);
+  const [sections, setSections] = useState([]);
 
   useEffect(() => {
     document.title = "Qui sommes-nous – Canopées";
@@ -15,20 +16,21 @@ function QuiSommeNous() {
     fetch(`${import.meta.env.VITE_API_URL}/api/valeurs`)
       .then((reponse) => reponse.json())
       .then((data) => setValeurs(data.member));
+    fetch(`${import.meta.env.VITE_API_URL}/api/pages/qui-sommes-nous`)
+      .then((reponse) => reponse.json())
+      .then((data) => setSections(data.sections));
   }, []);
+
+  // Chaque bloc de texte est retrouvé par son type (et non sa position, que Bob peut changer)
+  const presentation = sections.find((section) => section.type === "presentation");
+  const histoire = sections.find((section) => section.type === "histoire");
+  const valeursIntro = sections.find((section) => section.type === "valeurs-intro");
 
   return (
     <div>
       <div className="details">
-        <h1>Qui sommes-nous ?</h1>
-        <p>
-          Canopées est une entreprise spécialisée dans la création et
-          l'entretien d'espaces verts, pour les particuliers, professionnels et
-          collectivités.<br></br>
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          assumenda minus! Voluptate vel rerum accusantium laborum provident
-          obcaecati, quis expedita.
-        </p>
+        <h1>{presentation?.titre}</h1>
+        <p>{presentation?.texte}</p>
       </div>
       <div className="fondateurs">
         <h2>Nos fondateurs</h2>
@@ -65,20 +67,17 @@ function QuiSommeNous() {
         </div>
       </div>
       <div className="histoire">
-        <h2>Histoire de l'entreprise</h2>
+        <h2>{histoire?.titre}</h2>
         <div className="history">
-          <p>
-            La société <span>Canopées</span> a été fondée en 2020 par Bob et
-            Tom, deux amoureux de la nature. Notre mission est de créer et
-            entretenir des espaces naturels qui améliorent la qualité de vie des
-            personnes.
-          </p>
-          <img src="/images/histoire/mountain.jpg" alt="Photo d'une montagne" />
+          <p>{histoire?.texte}</p>
+          {histoire?.image && (
+            <img src={`${import.meta.env.VITE_API_URL}${histoire.image}`} alt={histoire.alt} />
+          )}
         </div>
       </div>
 
       <div className="valeurs">
-        <h2>Nos valeurs</h2>
+        <h2>{valeursIntro?.titre}</h2>
         <div className="valeurs-contenu">
           <div className="valeurs-colonne">
             {valeurs.slice(0, 3).map((valeur, index) => (
@@ -90,11 +89,13 @@ function QuiSommeNous() {
             ))}
           </div>
 
-          <img
-            src="/images/histoire/arbre.webp"
-            alt="Plante en pot"
-            className="valeurs-image"
-          />
+          {valeursIntro?.image && (
+            <img
+              src={`${import.meta.env.VITE_API_URL}${valeursIntro.image}`}
+              alt={valeursIntro.alt}
+              className="valeurs-image"
+            />
+          )}
 
           <div className="valeurs-colonne">
             {/* slice(3) recommence à compter à 0 : on ajoute 3 pour garder les bonnes couleurs */}

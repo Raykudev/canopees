@@ -114,6 +114,8 @@
   color: black;
 }
 .details p {
+  /* respecte les retours à la ligne tapés dans l'admin */
+  white-space: pre-line;
   width: 60%;
   margin: 0 auto;
   font-size: 18px;
