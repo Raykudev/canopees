@@ -1,13 +1,20 @@
 import { useEffect, useState } from "react";
 import "./QuiSommesNous.css";
 
+const COULEURS = ['icone-bleu', 'icone-mauve', 'icone-vert', 'icone-orange', 'icone-rose', 'icone-rouge']
+
 function QuiSommeNous() {
   const [fondateurs, setFondateurs] = useState([]);
+  const [valeurs, setValeurs] = useState([]);
+
   useEffect(() => {
     document.title = "Qui sommes-nous – Canopées";
     fetch(`${import.meta.env.VITE_API_URL}/api/fondateurs`)
       .then((reponse) => reponse.json())
       .then((data) => setFondateurs(data.member));
+    fetch(`${import.meta.env.VITE_API_URL}/api/valeurs`)
+      .then((reponse) => reponse.json())
+      .then((data) => setValeurs(data.member));
   }, []);
 
   return (
@@ -74,30 +81,13 @@ function QuiSommeNous() {
         <h2>Nos valeurs</h2>
         <div className="valeurs-contenu">
           <div className="valeurs-colonne">
-            <div className="carte-valeur">
-              <span className="icone-valeur icone-bleu"></span>
-              <h3>Respect de l'environnement</h3>
-              <p>
-                Nous privilégions des pratiques durables et respectueuses de la
-                biodiversité sur chaque chantier.
-              </p>
-            </div>
-            <div className="carte-valeur">
-              <span className="icone-valeur icone-mauve"></span>
-              <h3>Savoir-faire</h3>
-              <p>
-                Notre équipe s'appuie sur une expertise technique éprouvée pour
-                garantir des réalisations durables.
-              </p>
-            </div>
-            <div className="carte-valeur">
-              <span className="icone-valeur icone-vert"></span>
-              <h3>Proximité client</h3>
-              <p>
-                Nous restons à l'écoute de chaque client pour construire un
-                projet qui correspond vraiment à ses besoins.
-              </p>
-            </div>
+            {valeurs.slice(0, 3).map((valeur, index) => (
+              <div className="carte-valeur" key={valeur.id}>
+                <span className={`icone-valeur ${COULEURS[index]}`}></span>
+                <h3>{valeur.titre}</h3>
+                <p>{valeur.texte}</p>
+              </div>
+            ))}
           </div>
 
           <img
@@ -107,30 +97,14 @@ function QuiSommeNous() {
           />
 
           <div className="valeurs-colonne">
-            <div className="carte-valeur">
-              <span className="icone-valeur icone-orange"></span>
-              <h3>Qualité et personnalisation</h3>
-              <p>
-                Nous misons sur la qualité des matériaux utilisés et la
-                personnalisation des projets en fonction de vos goûts.
-              </p>
-            </div>
-            <div className="carte-valeur">
-              <span className="icone-valeur icone-rose"></span>
-              <h3>Fiabilité</h3>
-              <p>
-                Nous respectons nos engagements de délais et de budget sur
-                chacun de nos chantiers.
-              </p>
-            </div>
-            <div className="carte-valeur">
-              <span className="icone-valeur icone-rouge"></span>
-              <h3>Passion</h3>
-              <p>
-                Chaque projet est mené avec le même goût du travail bien fait,
-                du premier croquis à la dernière plantation.
-              </p>
-            </div>
+            {/* slice(3) recommence à compter à 0 : on ajoute 3 pour garder les bonnes couleurs */}
+            {valeurs.slice(3).map((valeur, index) => (
+              <div className="carte-valeur" key={valeur.id}>
+                <span className={`icone-valeur ${COULEURS[index + 3]}`}></span>
+                <h3>{valeur.titre}</h3>
+                <p>{valeur.texte}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
