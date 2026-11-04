@@ -3,7 +3,6 @@ import logo from "../assets/logo.png";
 import "./Contact.css";
 
 export default function Contact() {
-  
   const [formData, setFormData] = useState({
     nom: "",
     prenom: "",
@@ -15,10 +14,11 @@ export default function Contact() {
     message: "",
     rgpd: false,
   });
-  
+
   const [envoye, setEnvoye] = useState(false);
   const [entreprise, setEntreprise] = useState(null);
-  
+  const [erreurs, setErreurs] = useState([]);
+
   useEffect(() => {
     document.title = "Contact – Canopées";
     fetch(`${import.meta.env.VITE_API_URL}/api/entreprises`)
@@ -36,7 +36,18 @@ export default function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    setEnvoye(true);
+
+    fetch(`${import.meta.env.VITE_API_URL}/api/messages`, {
+      method: "POST",
+      headers: { "Content-Type": "application/ld+json" },
+      body: JSON.stringify(formData),
+    }).then((reponse) => {
+      if (reponse.ok) {
+        setEnvoye(true);
+      } else {
+        reponse.json().then((data) => setErreurs(data.violations));
+      }
+    });
   }
 
   return (
@@ -52,7 +63,10 @@ export default function Contact() {
           <h3>Contactez-nous</h3>
 
           <p>☎ {entreprise?.telephone}</p>
-          <p>📍 {entreprise?.adresse}, {entreprise?.codePostal} {entreprise?.ville}</p>
+          <p>
+            📍 {entreprise?.adresse}, {entreprise?.codePostal}{" "}
+            {entreprise?.ville}
+          </p>
           <p>🕐 {entreprise?.horaires}</p>
 
           <iframe
@@ -159,6 +173,12 @@ export default function Contact() {
               Ce site est protégé par reCAPTCHA, les règles de confidentialité
               et les conditions d'utilisation de Google s'appliquent.
             </p>
+
+            {erreurs.map((erreur) => (
+              <p key={erreur.propertyPath} className="contact-erreur">
+                {erreur.message}
+              </p>
+            ))}
 
             <button type="submit" className="btn-envoyer">
               Envoyer
